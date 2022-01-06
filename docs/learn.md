@@ -48,3 +48,11 @@ npx @umijs/create-dumi-app
 "start": "dumi dev",
 "prettier": "prettier -c --write \"docs/**/*\" \"packages/**/*\""
 ```
+
+4. 配置 msfu, esbuild
+
+```
+yarn add @umijs/plugin-esbuild -D
+```
+
+- 在.umirc.ts 文件中，添加 msfu, esbuild 配置

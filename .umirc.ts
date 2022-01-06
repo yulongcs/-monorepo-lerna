@@ -10,5 +10,7 @@ export default defineConfig({
       path: '/form-render',
     },
   ],
+  mfsu: {},
+  esbuild: {},
   // more config: https://d.umijs.org/config
 });

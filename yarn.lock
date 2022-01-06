@@ -1373,6 +1373,13 @@
   resolved "https://registry.npmmirror.com/@umijs/plugin-analytics/download/@umijs/plugin-analytics-0.2.2.tgz#575fd231d4327ea13413217aa1b5fc6bdd89465e"
   integrity sha1-V1/SMdQyfqE0EyF6obX8a92JRl4=
 
+"@umijs/plugin-esbuild@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.npmmirror.com/@umijs/plugin-esbuild/download/@umijs/plugin-esbuild-1.4.1.tgz#9cca180cd666f5bdf85261fc7a46b69cf35e3a65"
+  integrity sha1-nMoYDNZm9b34UmH8eka2nPNeOmU=
+  dependencies:
+    esbuild-loader "~2.9.2"
+
 "@umijs/preset-built-in@3.5.20":
   version "3.5.20"
   resolved "https://registry.npmmirror.com/@umijs/preset-built-in/download/@umijs/preset-built-in-3.5.20.tgz#e1f2eeb50152e14a48b317e7fd5e5915d5c65d4c"
@@ -2988,10 +2995,27 @@ es5-imcompatible-versions@^0.1.62:
   resolved "https://registry.nlark.com/es5-imcompatible-versions/download/es5-imcompatible-versions-0.1.73.tgz#2d34dbb29cbc54f38902cc1150bbe301b388c014"
   integrity sha1-LTTbspy8VPOJAswRULvjAbOIwBQ=
 
+esbuild-loader@~2.9.2:
+  version "2.9.2"
+  resolved "https://registry.npmmirror.com/esbuild-loader/download/esbuild-loader-2.9.2.tgz#ae16721aeb05018396395a95f528c778ba7361d0"
+  integrity sha1-rhZyGusFAYOWOVqV9SjHeLpzYdA=
+  dependencies:
+    esbuild "^0.8.42"
+    joycon "^2.2.5"
+    json5 "^2.2.0"
+    loader-utils "^2.0.0"
+    type-fest "^0.20.2"
+    webpack-sources "^2.2.0"
+
 esbuild@0.12.15:
   version "0.12.15"
   resolved "https://registry.npmmirror.com/esbuild/download/esbuild-0.12.15.tgz#9d99cf39aeb2188265c5983e983e236829f08af0"
   integrity sha512-72V4JNd2+48eOVCXx49xoSWHgC3/cCy96e7mbXKY+WOWghN00cCmlGnwVLRhRHorvv0dgCyuMYBZlM2xDM5OQw==
+
+esbuild@^0.8.42:
+  version "0.8.57"
+  resolved "https://registry.npmmirror.com/esbuild/download/esbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
+  integrity sha512-j02SFrUwFTRUqiY0Kjplwjm1psuzO1d6AjaXKuOR9hrY0HuPsT6sV42B6myW34h1q4CRy+Y3g4RU/cGJeI/nNA==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -4295,6 +4319,11 @@ jest-worker@26.6.2:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+joycon@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npmmirror.com/joycon/download/joycon-2.2.5.tgz#8d4cf4cbb2544d7b7583c216fcdfec19f6be1615"
+  integrity sha1-jUz0y7JUTXt1g8IW/N/sGfa+FhU=
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4383,7 +4412,7 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
-json5@^2.1.2:
+json5@^2.1.2, json5@^2.2.0:
   version "2.2.0"
   resolved "https://registry.nlark.com/json5/download/json5-2.2.0.tgz#2dfefe720c6ba525d9ebd909950f0515316c89a3"
   integrity sha1-Lf7+cgxrpSXZ69kJlQ8FFTFsiaM=
@@ -4566,6 +4595,15 @@ loader-utils@^1.1.0:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
+
+loader-utils@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.npmmirror.com/loader-utils/download/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"
+  integrity sha1-1uO0+4GHByGuTghoqxHdY4NowSk=
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -7287,6 +7325,11 @@ sort-keys@^4.0.0:
   dependencies:
     is-plain-obj "^2.0.0"
 
+source-list-map@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.nlark.com/source-list-map/download/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
+  integrity sha1-OZO9hzv8SEecyp6jpUeDXHwVSzQ=
+
 source-map-support@~0.5.19, source-map-support@~0.5.20:
   version "0.5.21"
   resolved "https://registry.npmmirror.com/source-map-support/download/source-map-support-0.5.21.tgz?cache=0&sync_timestamp=1637320322789&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsource-map-support%2Fdownload%2Fsource-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
@@ -7816,6 +7859,11 @@ type-fest@^0.18.0:
   resolved "https://registry.npmmirror.com/type-fest/download/type-fest-0.18.1.tgz#db4bc151a4a2cf4eebf9add5db75508db6cc841f"
   integrity sha1-20vBUaSiz07r+a3V23VQjbbMhB8=
 
+type-fest@^0.20.2:
+  version "0.20.2"
+  resolved "https://registry.npmmirror.com/type-fest/download/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
+  integrity sha1-G/IH9LKPkVg2ZstfvTJ4hzAc1fQ=
+
 type-fest@^0.21.3:
   version "0.21.3"
   resolved "https://registry.npmmirror.com/type-fest/download/type-fest-0.21.3.tgz#d260a24b0198436e133fa26a524a6d65fa3b2e37"
@@ -8160,6 +8208,14 @@ webpack-chain@6.5.1:
   dependencies:
     deepmerge "^1.5.2"
     javascript-stringify "^2.0.1"
+
+webpack-sources@^2.2.0:
+  version "2.3.1"
+  resolved "https://registry.npmmirror.com/webpack-sources/download/webpack-sources-2.3.1.tgz?cache=0&sync_timestamp=1636982774408&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fwebpack-sources%2Fdownload%2Fwebpack-sources-2.3.1.tgz#570de0af163949fe272233c2cefe1b56f74511fd"
+  integrity sha1-Vw3grxY5Sf4nIjPCzv4bVvdFEf0=
+  dependencies:
+    source-list-map "^2.0.1"
+    source-map "^0.6.1"
 
 whatwg-encoding@^1.0.5:
   version "1.0.5"
