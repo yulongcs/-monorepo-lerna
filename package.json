@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn",
+    "build": "lerna run build",
+    "clean": "lerna clean -y",
+    "changelog": "lerna-changelog"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "lerna-changelog": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulongcs/MonoRepo.git",
+    "branch": "master",
+    "platform": "github"
+  }
+}
