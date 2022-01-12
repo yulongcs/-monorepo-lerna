@@ -9,24 +9,29 @@
     "doc": "dumi build",
     "start": "dumi dev",
     "build": "lerna run build",
+    "publish": "npm run build && lerna publish -m \"chore: publish\"",
     "clean": "lerna clean -y",
     "changelog": "lerna-changelog",
+    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "lint:prettier": "check-prettier lint",
+    "lint-staged": "lint-staged",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
     "prettier": "prettier -c --write \"docs/**/*\" \"packages/**/*\""
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
+  "husky": { "hooks": { "pre-commit": "npm run lint-staged" } },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
-    ]
+    "**/*.less": "stylelint --syntax less",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write", "git add"],
+    "**/*.{js,jsx}": "npm run lint-staged:js",
+    "**/*.{js,ts,tsx}": "npm run lint-staged:js"
   },
   "devDependencies": {
+    "@umijs/fabric": "^2.10.0",
     "@umijs/plugin-esbuild": "^1.4.1",
     "dumi": "^1.1.38",
+    "father-build": "^1.20.4",
     "lerna": "^4.0.0",
     "lerna-changelog": "^2.2.0",
     "lint-staged": "^10.0.7",
