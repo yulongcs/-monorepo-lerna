@@ -45,7 +45,6 @@
     "platform": "github"
   },
   "publishConfig": {
-    "access": "public",
     "registry": "http://178.119.104.9:4873/"
   }
 }

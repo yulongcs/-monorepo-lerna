@@ -25,5 +25,8 @@
   "license": "MIT",
   "devDependencies": {
     "@types/lodash": "^4.14.168"
+  },
+  "publishConfig": {
+    "registry": "http://178.119.104.9:4873/"
   }
 }
